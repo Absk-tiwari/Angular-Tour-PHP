@@ -11,8 +11,8 @@ require '../database.php';
         $password = mysqli_real_escape_string($mysql, trim($request->pwd));
          
         if($name == "" || $email == "" || $password == ""){
-            http_response_code(500);
             echo json_encode(['message' => "Enter valid details!"]);
+            return http_response_code(500);
         }
         $sql = " INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES (NULL, '$name', '$email', '$password')";
 
