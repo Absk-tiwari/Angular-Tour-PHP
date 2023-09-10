@@ -4,7 +4,7 @@ header('Access-Control-Allow-Credentials: false');
 header("Access-Control-Allow-Methods:POST, PUT, PATCH, GET,OPTIONS,  DELETE");
 header("Access-Control-Allow-Headers: *");
 header("Content-Type: *"); 
-header('Accept: *');header('Content-Transfer-Encoding: binary');
+header('Accept: *');
 
 define('HOST', 'localhost');
 define('USER', 'root');
